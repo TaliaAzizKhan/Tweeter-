@@ -1,0 +1,59 @@
+
+
+
+nav {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  height: 120px;
+  font-family: Bungee;
+  width: 100%;
+}
+
+.logo {
+  align-self: center;
+  display: flex;
+  font-family: 'Bungee', cursive;
+  margin: 2.5%;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.innerContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 2.5%;
+}
+
+.innerContent > span {
+  text-align: center;
+}
+
+.fa-angle-double-down {
+  color: red;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+/* For bouncing arrow on write new tweet button */
+
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(5px);}
+  100% {transform: translateY(0);}
+}
+
+/* Keep nav in place*/
+
+.sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
