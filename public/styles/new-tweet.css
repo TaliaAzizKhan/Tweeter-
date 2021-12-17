@@ -1,0 +1,43 @@
+.overCharLimit {
+  color: red;
+}
+
+.newTweet {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+
+}
+
+.tweetInput {
+  border-bottom: solid 0.20em #545149;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content:space-between;
+  margin-top: 2%;
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+}
+
+output {
+  font-family: 'Bungee', cursive;
+}
+
+
+input[type="text"], textarea {
+  background-color : #f4f1ec; 
+  border: transparent;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+  width: 100%;
+}

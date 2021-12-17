@@ -1,8 +1,13 @@
+    
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -10,25 +15,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
 
-
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/58b7eecc97.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/composer.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+      <nav class="container sticky">
+        </div>
+        <span class="logo">tweeter</span>
+        <div class="innerContent">
+          <span><strong>Write</strong> a new tweet</span>
+          <span><i class="fas fa-angle-double-down"></i></span>
+        </nav>
+        <section class="mainContentContainer">
+          <!-- Header for Avatar -->
+          <header class="headerContainer">
+            <div class="avatarContainer">
+              <div>
+                <img src="/images/profile-hex.png"> 
+              </div>
+              <br>
+              <div class="avatarName">
+                <div><strong>Amy Mansell</strong></div>
+              </div>
+            </div>
+          </header>
+      <!-- Page-specific (main) content here -->
+      <main>
+        <section class="newTweet">
+          <section id="error-message">
+            <!--Empty container for when relevant error is triggered-->
+          </section>
+          <form id="tweet-form" method="POST" action="/tweets">
+            <div class="tweetInput">
+                <label for="tweet-text">What are you humming about?</label>
+              <textarea name="text" id="tweet-text"></textarea>
+            </div>
+            <div class="buttonContainer">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section id="tweets-container">
+          <!--Empty container for new posted tweets-->
+        </section>
+      </main>
+    </section>
+    <footer id="scroll-arrow">
+      <i class="fas fa-chevron-circle-up fa-3x"></i>
+  </footer>
   </body>
 </html>

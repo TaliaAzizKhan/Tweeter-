@@ -1,0 +1,23 @@
+.headerContainer {
+  background-color: lightgray;
+  background-image: url(https://www.transparenttextures.com/patterns/dark-wood.png);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.avatarName {
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px;
+}
