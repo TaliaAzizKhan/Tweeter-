@@ -9,11 +9,17 @@ Tweeter is a Twitter clone. A Single Page App (SPA) built with HTML, CSS, JS, jQ
 
 
 !["Screenshot description"] (https://github.com/TaliaAzizKhan/Tweeter-/blob/master/docs/1-main-page.png?raw=true)
+
 !["Screenshot description"] (https://github.com/TaliaAzizKhan/Tweeter-/blob/master/docs/2-tweet-box.png?raw=true)
+
 !["Screenshot description"] (https://github.com/TaliaAzizKhan/Tweeter-/blob/master/docs/3-write-a-tweet.png?raw=true)
+
 !["Screenshot description"] (https://github.com/TaliaAzizKhan/Tweeter-/blob/master/docs/4-word-limit-exceeded-error.png?raw=true)
+
 !["Screenshot description"] (https://github.com/TaliaAzizKhan/Tweeter-/blob/master/docs/5-empty-field-error.png?raw=true)
+
 !["Screenshot description"] (https://github.com/TaliaAzizKhan/Tweeter-/blob/master/docs/6-go-up-button.png?raw=true)
+
 !["Screenshot description"] ()
 
 
